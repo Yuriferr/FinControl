@@ -1,0 +1,85 @@
+main {
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    margin: 30px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/* topDicas */
+
+main .topDicas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+main .topDicas ol{
+    color: #0ABF8C;
+    font-size: 2em;
+}
+
+main .topDicas ol li{
+    margin: 20px 0;
+    border-bottom: 1px solid gray;
+}
+
+main .topDicas ol li div{
+    color: black;
+    font-size: 1rem;
+}
+
+/* artigos */
+
+main .artigos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(211, 211, 211, 0.2);
+    padding: 20px 0;
+}
+
+main .artigos div{
+    width: 300px;
+    height: 350px;
+    background-color: #0ABF8C;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+}
+
+
+main .artigos div h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+main .artigos div img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+main .artigos div p{
+    width: 100%;
+    text-align: justify;
+    font-size: 0.9em;
+}

@@ -9,14 +9,12 @@ document.getElementById('metaForm').addEventListener('submit', function(e) {
     var data = document.getElementById('data').value;
 
     if (selectedRow) {
-        // Edit existing row
         selectedRow.cells[0].innerHTML = meta;
         selectedRow.cells[1].innerHTML = descricao;
         selectedRow.cells[2].innerHTML = valor;
         selectedRow.cells[3].innerHTML = data;
         selectedRow = null;
     } else {
-        // Add new row
         var table = document.getElementById('metaTable');
         var row = table.insertRow(-1);
         var metaCell = row.insertCell(0);
@@ -29,8 +27,9 @@ document.getElementById('metaForm').addEventListener('submit', function(e) {
         descricaoCell.innerHTML = descricao;
         valorCell.innerHTML = valor;
         dataCell.innerHTML = data;
-        actionsCell.innerHTML = '<button class="btn btn-success" onclick="editRow(this)">Editar</button>' +
-                                '<button class="btn btn-success" onclick="deleteRow(this)">Excluir</button>';
+        actionsCell.innerHTML = '<button class="edit-button btn btn-success" onclick="editRow(this)">Editar</button>' +
+                                '<button class="delete-button btn btn-success" onclick="deleteRow(this)">Excluir</button>' +
+                                '<button class="notify-button btn btn-success" onclick="setNotification(this)">Notificar</button>';
     }
 
     document.getElementById('metaForm').reset();
@@ -47,4 +46,40 @@ function editRow(button) {
 function deleteRow(button) {
     var row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
+}
+
+function setNotification(button) {
+    var row = button.parentNode.parentNode;
+    var meta = row.cells[0].innerHTML;
+    var data = row.cells[3].innerHTML;
+
+    if (Notification.permission === 'granted') {
+        createNotification(meta, data);
+    } else if (Notification.permission !== 'denied') {
+        Notification.requestPermission().then(function(permission) {
+            if (permission === 'granted') {
+                createNotification(meta, data);
+            }
+        });
+    }
+}
+
+function createNotification(meta, data) {
+    var currentDate = new Date();
+    var notificationDate = new Date(data);
+
+    if (notificationDate > currentDate) {
+        var timeDifference = notificationDate.getTime() - currentDate.getTime();
+        var daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+        
+        var notification = new Notification('Meta Tracker', {
+            body: 'A meta "' + meta + '" está perto da data de conclusão! Faltam ' + daysDifference + ' dia(s).',
+            icon: 'notification-icon.png'
+        });
+
+        notification.onclick = function() {
+            window.focus();
+            notification.close();
+        };
+    }
 }
