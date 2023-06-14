@@ -22,7 +22,7 @@ serviceForm.addEventListener("submit", function (event) {
     valueCell.textContent = serviceValue;
     dateCell.textContent = paymentDate;
     actionsCell.innerHTML =
-      '<button onclick="editRow(this)" class="btn btn-success">Editar</button> <button onclick="deleteRow(this)" class="btn btn-success">Excluir</button>';
+      '<button onclick="editRow(this)" class="btn btn-success"><span class="material-icons">edit</span></button> <button onclick="deleteRow(this)" class="btn btn-success"><span class="material-icons">delete</span></button>';
   } else {
     // Editar um serviço existente
     var row = serviceTable.rows[editRowIndex];
@@ -30,7 +30,7 @@ serviceForm.addEventListener("submit", function (event) {
     row.cells[1].textContent = serviceValue;
     row.cells[2].textContent = paymentDate;
     row.cells[3].innerHTML =
-      '<button onclick="editRow(this)" class="btn btn-success">Editar</button> <button onclick="deleteRow(this)" class="btn btn-success">Excluir</button>';
+      '<button onclick="editRow(this)" class="btn btn-success"><span class="material-icons">edit</span></button> <button onclick="deleteRow(this)" class="btn btn-success"><span class="material-icons">delete</span></button>';
 
     editRowIndex = -1; // Resetar o índice de edição
   }

@@ -15,6 +15,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <title>User</title>
   </head>
   <body>
@@ -26,9 +32,7 @@
           <a href="./planejarFuturo.html">Planejar Futuro</a>
         </li>
         <li>
-          <a href="./dicasInvestimentos.html"
-            >Dicas Investimentos</a
-          >
+          <a href="./dicasInvestimentos.html">Dicas Investimentos</a>
         </li>
         <li>
           <a href="./adcionarServico.html">Adicionar Serviço</a>
@@ -39,6 +43,23 @@
           </a>
         </li>
       </ul>
+
+      <div class="open-menu-button">
+        <span class="material-icons">menu</span>
+      </div>
+
+      <div class="fullscreen-menu">
+        <div class="fullscreen-menu-content">
+          <!-- Conteúdo do seu menu -->
+          <div><a href="./planejarFuturo.html">Planejar Futuro</a></div>
+          <div>
+            <a href="./dicasInvestimentos.html">Dicas de Investimento</a>
+          </div>
+          <div><a href="./adcionarServico.html">Adcionar Serviço</a></div>
+          <div><a href="./user.html">Perfil</a></div>
+          <div class="close-menu-button">Fechar Menu</div>
+        </div>
+      </div>
     </header>
 
     <section>
@@ -48,7 +69,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text">Receita em R$</span>
         </div>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="8754">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Amount (to the nearest dollar)"
+          value="8754"
+        />
         <div class="input-group-append">
           <span class="input-group-text">.00</span>
         </div>
@@ -56,45 +82,97 @@
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">Email:</span>
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Email:</span
+          >
         </div>
-        <input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" disabled value="anaoliveira@gmail.com.br">
+        <input
+          type="email"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          disabled
+          value="anaoliveira@gmail.com.br"
+        />
       </div>
       <a href="">Trocar o Email</a>
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">Senha:</span>
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Senha:</span
+          >
         </div>
-        <input type="password" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" disabled value="anaoliveira">
+        <input
+          type="password"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          disabled
+          value="anaoliveira"
+        />
       </div>
       <a href="">Trocar a senha</a>
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">RG:</span>
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >RG:</span
+          >
         </div>
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" disabled value="MG-00.000.000">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          disabled
+          value="MG-00.000.000"
+        />
       </div>
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">CPF:</span>
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >CPF:</span
+          >
         </div>
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" disabled value="00000000000">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          disabled
+          value="00000000000"
+        />
       </div>
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">Data de nascimento:</span>
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Data de nascimento:</span
+          >
         </div>
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" disabled value="00/00/0000">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          disabled
+          value="00/00/0000"
+        />
       </div>
 
       <button class="btn btn-success">Salvar</button>
     </section>
 
-    <img class="background" src="../images/user/Money income-amico.png" alt="">
+    <img
+      class="background"
+      src="../images/user/Money income-amico.png"
+      alt=""
+    />
+
+    <!-- scripts -->
+    <script src="../js/main.js"></script>
 
     <!-- bootstrap -->
     <script

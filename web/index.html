@@ -1,105 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
 
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- animacoes -->
-    <style>svg#freepik_stories-finance-leaders:not(.animated) .animable {opacity: 0;}svg#freepik_stories-finance-leaders.animated #freepik--character-2--inject-32 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) fadeIn;animation-delay: 0s;}svg#freepik_stories-finance-leaders.animated #freepik--character-1--inject-32 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) fadeIn;animation-delay: 0s;}            @keyframes fadeIn {                0% {                    opacity: 0;                }                100% {                    opacity: 1;                }            }        </style>
+    <style>
+      svg#freepik_stories-finance-leaders:not(.animated) .animable {
+        opacity: 0;
+      }
+      svg#freepik_stories-finance-leaders.animated
+        #freepik--character-2--inject-32 {
+        animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+        animation-delay: 0s;
+      }
+      svg#freepik_stories-finance-leaders.animated
+        #freepik--character-1--inject-32 {
+        animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+        animation-delay: 0s;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <!-- icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <title>FIN CONTROL</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <a href=""><span>Fin</span> Control</a>
+      <a href=""><span>Fin</span> Control</a>
 
-        <ul>
-            <li><a href="./assets/pages/planejarFuturo.html">Planejar Futuro</a></li>
-            <li><a href="./assets/pages/dicasInvestimentos.html">Dicas Investimentos</a></li>
-            <li><a href="./assets/pages/adcionarServico.html">Adicionar Serviço</a></li>
-            <li><a href="./assets/pages/user.html">
-                <img src="./assets/images/main/perfil.jpg" alt="foto de perfil">
-            </a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="./assets/pages/planejarFuturo.html">Planejar Futuro</a>
+        </li>
+        <li>
+          <a href="./assets/pages/dicasInvestimentos.html"
+            >Dicas Investimentos</a
+          >
+        </li>
+        <li>
+          <a href="./assets/pages/adcionarServico.html">Adicionar Serviço</a>
+        </li>
+        <li>
+          <a href="./assets/pages/user.html">
+            <img src="./assets/images/main/perfil.jpg" alt="foto de perfil" />
+          </a>
+        </li>
+      </ul>
+
+      <div class="open-menu-button">
+        <span class="material-icons">menu</span>
+      </div>
+
+      <div class="fullscreen-menu">
+        <div class="fullscreen-menu-content">
+          <!-- Conteúdo do seu menu -->
+          <div>
+            <a href="./assets/pages/planejarFuturo.html">Planejar Futuro</a>
+          </div>
+          <div>
+            <a href="./assets/pages/dicasInvestimentos.html"
+              >Dicas de Investimento</a
+            >
+          </div>
+          <div>
+            <a href="./assets/pages/adcionarServico.html">Adcionar Serviço</a>
+          </div>
+          <div><a href="./assets/pages/user.html">Perfil</a></div>
+          <div class="close-menu-button">Fechar Menu</div>
+        </div>
+      </div>
     </header>
 
     <section class="banner">
-        <div class="content">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo accusantium cupiditate odio, provident repellat culpa hic iusto modi inventore fugiat laudantium ipsa excepturi amet accusamus debitis consequuntur. Illo, sequi.</p>
+      <div class="content">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+          eius!
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo
+          accusantium cupiditate odio, provident repellat culpa hic iusto modi
+          inventore fugiat laudantium ipsa excepturi amet accusamus debitis
+          consequuntur. Illo, sequi.
+        </p>
 
-            <a href="" class="btn btn-success">Lorem.</a>
-        </div>
+        <a href="" class="btn btn-success">Lorem.</a>
+      </div>
 
-        <div class="image">
-            <svg class="animated" id="freepik_stories-finance-leaders" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><style>svg#freepik_stories-finance-leaders:not(.animated) .animable {opacity: 0;}svg#freepik_stories-finance-leaders.animated #freepik--character-2--inject-32 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) fadeIn;animation-delay: 0s;}svg#freepik_stories-finance-leaders.animated #freepik--character-1--inject-32 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) fadeIn;animation-delay: 0s;}            @keyframes fadeIn {                0% {                    opacity: 0;                }                100% {                    opacity: 1;                }            }        </style><g id="freepik--background-simple--inject-32" class="animable" style="transform-origin: 361.911px 240.679px;"><path d="M609.38,91.64a163.45,163.45,0,0,0-31.33-23.51c-37-21.71-78.32-36.88-121-41.84-4.12-.47-8.26-.86-12.4-1.14-96.15-6.59-161,50.49-201,105.36S146,151.73,87,231.49,60,392.46,146.68,434.17s198.14,16.09,269.53-1.47,141.32,43.17,209.07-43.17c50.85-64.81,50.81-162.35,22.85-236.64C638.8,128.11,626.46,108.15,609.38,91.64Z" style="fill: rgb(10, 191, 140); transform-origin: 361.911px 240.679px;" id="el5l47zet87bl" class="animable"></path><g id="eli0v9jreth5p"><path d="M609.38,91.64a163.45,163.45,0,0,0-31.33-23.51c-37-21.71-78.32-36.88-121-41.84-4.12-.47-8.26-.86-12.4-1.14-96.15-6.59-161,50.49-201,105.36S146,151.73,87,231.49,60,392.46,146.68,434.17s198.14,16.09,269.53-1.47,141.32,43.17,209.07-43.17c50.85-64.81,50.81-162.35,22.85-236.64C638.8,128.11,626.46,108.15,609.38,91.64Z" style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 361.911px 240.679px;" class="animable"></path></g></g><g id="freepik--Clouds--inject-32" class="animable" style="transform-origin: 387.505px 245.811px;"><g id="el9igskkdjjrv"><path d="M637.69,130.27S629.23,88.88,601,91.7c-12.83,1.28-21.42,7.72-28.86,17.71-9.55,12.82-13,5.37-26.64,9.57-12.23,3.77-10.35,14.12-17.88,16s-13.17-6.59-23.52-4.71-16,12.23-16,12.23H676.27a18.24,18.24,0,0,0-13.17-15C650.86,123.69,645.22,133.1,637.69,130.27Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-miterlimit: 10; opacity: 0.3; transform-origin: 582.185px 117.031px;" class="animable"></path></g><g id="el9bsgqi5uwmg"><path d="M193.16,127.53S187.81,101.4,170,103.18c-8.11.82-13.52,4.87-18.22,11.18-6,8.09-8.18,3.39-16.81,6-7.72,2.38-6.53,8.91-11.29,10.1s-8.31-4.16-14.84-3-10.1,7.72-10.1,7.72H217.5a11.5,11.5,0,0,0-8.31-9.5C201.47,123.37,197.91,129.31,193.16,127.53Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-miterlimit: 10; opacity: 0.3; transform-origin: 158.12px 119.137px;" class="animable"></path></g><g id="elaz3m6wvtl0l"><path d="M494,393.28s-4.7-22.95-20.35-21.38c-7.11.71-11.87,4.28-16,9.82-5.3,7.1-7.19,3-14.77,5.3-6.78,2.09-5.74,7.83-9.91,8.87s-7.3-3.65-13-2.61-8.86,6.78-8.86,6.78h104.3a10.1,10.1,0,0,0-7.3-8.34C501.28,389.63,498.15,394.85,494,393.28Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-miterlimit: 10; opacity: 0.3; transform-origin: 463.26px 385.941px;" class="animable"></path></g><g id="el1y0bc24rs5x"><path d="M244.93,353s-4.7-22.94-20.35-21.38c-7.11.71-11.87,4.28-16,9.82-5.29,7.1-7.18,3-14.76,5.3-6.78,2.09-5.74,7.83-9.91,8.87s-7.3-3.65-13-2.61-8.86,6.78-8.86,6.78h104.3a10.1,10.1,0,0,0-7.3-8.34C252.23,349.3,249.1,354.52,244.93,353Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-miterlimit: 10; opacity: 0.3; transform-origin: 214.2px 345.662px;" class="animable"></path></g></g><g id="freepik--Arrow--inject-32" class="animable" style="transform-origin: 403.335px 307.87px;"><polygon points="593.46 160.51 614.02 175.74 470.09 263.32 444.2 312.06 278.94 372.98 106.88 486.5 208.05 486.5 316.26 404.96 480.75 344.8 509.69 291.49 648.29 196.3 677.23 218.39 709.98 138.42 709.98 129.24 593.46 160.51" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 408.43px 307.87px;" id="elbismqd2dkxc" class="animable"></polygon><polygon points="593.46 151.32 614.02 166.55 470.09 254.13 444.2 302.87 278.94 363.79 96.69 486.5 197.81 486.5 316.26 395.78 480.75 335.62 509.69 282.31 648.29 187.12 677.23 209.2 709.98 129.24 593.46 151.32" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 403.335px 307.87px;" id="elnkh4fr1nq5" class="animable"></polygon><line x1="470.53" y1="325.94" x2="473.9" y2="328.76" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 472.215px 327.35px;" id="elzxjjte2k608" class="animable"></line><line x1="450.29" y1="308.96" x2="466.34" y2="322.43" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 458.315px 315.695px;" id="eluryvg94ctpe" class="animable"></line><line x1="476.18" y1="256.42" x2="486.84" y2="264.03" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 481.51px 260.225px;" id="el254nkpgy3b5" class="animable"></line><line x1="310.93" y1="392.73" x2="280.34" y2="371.24" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 295.635px 381.985px;" id="elxgd4p4gnrjj" class="animable"></line><polygon points="593.46 160.51 593.46 151.32 614.02 166.55 607.25 170.75 593.46 160.51" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 603.74px 161.035px;" id="el6h80o23yaiu" class="animable"></polygon><polygon points="677.23 218.39 677.23 209.2 648.29 187.12 648.29 196.3 677.23 218.39" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-miterlimit: 10; transform-origin: 662.76px 202.755px;" id="el7k5z0we5m69" class="animable"></polygon></g><g id="freepik--character-2--inject-32" class="animable animator-active" style="transform-origin: 432.009px 198.96px;"><path d="M328.58,205.22l-6,11.28s1.45,1.91,2,1.6,3.5-5.42,3.5-5.42l-2.36,8.73s.95,1.51,1.54.85,2.74-6.91,3.28-7,1.81-2.35,1.81-2.35L330.17,220s-.82,3.33.63,3.1,1.55-3.45,1.55-3.45l3.08-4.73L334.28,220s2,1.42,2.31.2,1.4-6,1.4-6,5-6,5.58-6.67,3.53-7.91,3.53-7.91l-4.46-6.28Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 334.84px 208.226px;" id="els110wblq43f" class="animable"></path><path d="M341.81,194.74l-11.88,3.09s-3.61,8.8-4.64,10.32.21,1.81,2.06,1.07,5.06-4.92,5.06-4.92,5.65.84,7.52-2.22" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 333.364px 202.175px;" id="el1ki9zs9h6xu" class="animable"></path><line x1="331.09" y1="209.36" x2="336.19" y2="212.3" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 333.64px 210.83px;" id="elkrg21d75j5r" class="animable"></line><path d="M414.73,97.2l24.71,63.06,2.18,6.83s-23.79,9.94-28.73,10.73a47.14,47.14,0,0,0-6.82,1.45l-24.89-62.42,8.44-13.44L409.84,95Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 411.4px 137.135px;" id="elpgejrpbbgrc" class="animable"></path><line x1="414.87" y1="130.3" x2="426.5" y2="166.91" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 420.685px 148.605px;" id="el5zx7fgdb91" class="animable"></line><path d="M408.37,306.49a95.36,95.36,0,0,1-1.55,9.78c-.76,2.77-3.18,10.35-2.82,12.33s2.29,10.46,3.47,11.09,2.94.78,3.9,0,5.84-10.3,6.3-13.62.15-14.15.22-15S408.37,306.49,408.37,306.49Z" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 410.946px 323.355px;" id="eluvipskbz3u9" class="animable"></path><path d="M512.62,244.61s8,3.7,9.06,3.79,10.18,1,10.18,1,7.56-1.48,8.74-.85.77,3.43.77,3.43-15.21,8.08-17.37,8.6-4.75-.4-6.2,0l-1.45.41,1.22,2.23-9.09,4.89s-4-4.6-4.16-7.26-.26-7.28-.26-7.28l-1.3-5.43Z" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 522.099px 256.36px;" id="el96rt1cckfq7" class="animable"></path><path d="M412.64,95.72s17,43.39,20.22,50.07,6.08,14.74,8.56,16.83-6.39-22.12-7.23-26.88-.71-13.66-.71-13.66L508.2,96.45l-2.8-9.31L443,94.61s-12.7-1.4-15.36-1.31S412.64,95.72,412.64,95.72Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 460.42px 124.944px;" id="el1drk23t77gn" class="animable"></path><path d="M418.31,94.69c-3.07.54-5.67,1-5.67,1s11.9,30.29,17.67,44.15a137.65,137.65,0,0,0-3.51-23.67A109.6,109.6,0,0,0,418.31,94.69Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 421.475px 117.265px;" id="el3db9efmt7kc" class="animable"></path><polyline points="435.77 102.74 433.48 122.08 439.44 103.68" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 436.46px 112.41px;" id="elu5869hxskxn" class="animable"></polyline><polygon points="505.4 87.14 509.99 86.44 511.8 94.57 508.2 96.44 505.4 87.14" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 508.6px 91.44px;" id="ela7umszittf" class="animable"></polygon><path d="M526.45,84.1s3.85.64,3.77,1.57-1.45,6-1.45,6a11.61,11.61,0,0,1-5.62,0c-2.43-.83-3.22-2.62-2.61-4.29S526.45,84.1,526.45,84.1Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 525.282px 88.0576px;" id="elwtguh8dsb7j" class="animable"></path><polyline points="523.64 85.89 526.82 87.1 526.48 90.98" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 525.23px 88.435px;" id="el1kvb27qqtbq" class="animable"></polyline><path d="M522.47,86.73l1.89,1.72a3,3,0,0,1,0,1.41" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 523.457px 88.295px;" id="elurc0v6biojh" class="animable"></path><path d="M510,86.44l12-2.73s11.51-4.79,11.92-4.13a1.45,1.45,0,0,1-.17,2c-.68.57-9.07,3.6-10.06,4.3s-1.61,2.36-.9,3.21A4.55,4.55,0,0,0,526.48,91c1.74-.17,6-.74,6.11-.1s.5,1.45-1,2-3.78.3-4.89.52-5.6,1.55-7.31,1.4a24.28,24.28,0,0,1-4.59-1.17l-3.05,1Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 522.121px 87.1747px;" id="elrspodx84mn" class="animable"></path><path d="M438,160.39s12.5,24.3,13.48,24.32,12.3-8.51,12.6-8.9-15.08-9.18-19.42-13.7-8.17-9.53-8.17-9.53Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 450.287px 168.645px;" id="elz8x877i6l3" class="animable"></path><path d="M441.62,167.09l6,10.46s31.37-3.61,42-4.32,14.38.42,14.38.42l10.56,70.93-16.87,7.48L481.92,199s-35.12,9.57-40.25,10.15a43.66,43.66,0,0,0-7.62,1.37s-9.68,65.55-10.42,74.21-.68,24.5-.68,24.5l-4.86,4.66s-10.49-5.57-11-6.43-5.83-81.28-5.83-81.28l-2-31.42,6.8-15.45Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 456.91px 240.49px;" id="elry67qv6hm4" class="animable"></path><polygon points="409.95 181.41 443.1 170.01 441.62 167.09 409.48 178.01 409.95 181.41" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 426.29px 174.25px;" id="el860xzp0ixfg" class="animable"></polygon><polygon points="423.88 173.06 425.43 176.77 432.86 174.14 431.46 170.58 423.88 173.06" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 428.37px 173.675px;" id="el4tu6a0c26tm" class="animable"></polygon><line x1="416.85" y1="241.73" x2="416.78" y2="237.7" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 416.815px 239.715px;" id="els0vy3dcwf8f" class="animable"></line><line x1="418.09" y1="313.85" x2="416.92" y2="245.97" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 417.505px 279.91px;" id="el00wp3u9su4hxi" class="animable"></line><path d="M434.05,210.48S436,197,440,189" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 437.025px 199.74px;" id="elkm3bejyjljo" class="animable"></path><path d="M442,182.73s-5.81,9.5-6.7,11.57" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 438.65px 188.515px;" id="el5ivlg3nx6sa" class="animable"></path><line x1="492.56" y1="195.6" x2="495.45" y2="194.69" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 494.005px 195.145px;" id="elsv6vwqw2409" class="animable"></line><line x1="481.92" y1="198.96" x2="489.58" y2="196.54" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 485.75px 197.75px;" id="elxnsucd06tqk" class="animable"></line><polygon points="405 120.11 413.49 125.48 416.16 113.01 406.58 110.05 405 120.11" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 410.58px 117.765px;" id="elviabbg4fpv" class="animable"></polygon><polygon points="408.82 115 401.58 130.9 391.97 105.22 412.64 95.72 424.02 117.26 408.82 115" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 407.995px 113.31px;" id="elc5pragws5qm" class="animable"></polygon><polygon points="344.81 190.63 340.89 194.73 347.13 201.74 349.15 198.57 344.81 190.63" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 345.02px 196.185px;" id="eldekl65vfc8" class="animable"></polygon><path d="M389.62,103.41,366,122l-2.38,48.62-20,21,5.86,8.9,29-22.91,3.94-27.69,5.49,15.8-6.35,38.62a115.87,115.87,0,0,0,13.4,4.37c6.65,1.64,15.15.58,15.15.58l1.46-46.37-18.62-60.25Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 377.595px 156.148px;" id="elqo8my8iqgfo" class="animable"></path><polyline points="390.56 173.11 407.58 174.75 407.58 181.3 390.23 178.68" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 398.905px 177.205px;" id="eldi3ugi7eyfb" class="animable"></polyline><path d="M392.91,102.62l-3.29.79-4.31,3.39a145.34,145.34,0,0,0,7.7,21.76c3.62,8,10.47,17.26,15,23Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 396.66px 127.09px;" id="elu221a1p3sre" class="animable"></path><path d="M413.49,125.48l-16.58,14-30.77-4.07-14.57,11.45-3.14,7.42,12.53,2,11.82-12.76s23.77,4.37,25.06,3.94,14-17.75,14-17.75Z" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 380.96px 140.88px;" id="elpgjhj9d5o7" class="animable"></path><path d="M378.58,71.49s-4.27,1.23-6.24-1.32-3.27-5.85-1.53-5.3A22.1,22.1,0,0,1,375,67s-.67-6,.74-6.3,2,2.36,2,2.36,6.14-4.44,13-5.25,17,3.05,18.48,4.56.49,15.14.2,16.11-.87,3.3-1.93,4-3.52,1.68-4.81.58-1.16-2.68-3.51-3.08-8.11-.5-8.49-2.92,2.16-6.76-.22-6.77-8.32,2.07-9.91,2.13S378.58,71.49,378.58,71.49Z" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 390.004px 70.627px;" id="el8b95p7jkf8m" class="animable"></path><path d="M378.58,71.49l0,12.12L381,86.8l-1,11.44,5-.37s3.33,9.82,4.3,10.1,5.17-2.34,5.17-2.34,13.65,9.91,14.29,9.37,3.29-17.59,3.74-18.15-2-9.5-2-9.5,1.94-4,1.4-7-1.5-3.31-1.5-3.31-2.09-1.17-2.78,0-2.79,4.73-2.79,4.73l-3.05-3.84s-8.67-.74-8.57-1.93,2-7.17,1.46-7.82S383.85,68,378.58,71.49Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 395.568px 91.4766px;" id="el0gt1h6g1dpgn" class="animable"></path><path d="M390.33,85.86c.4,1,.32,2-.18,2.18s-1.23-.45-1.64-1.45-.32-2,.18-2.17S389.92,84.86,390.33,85.86Z" style="fill: rgb(38, 50, 56); transform-origin: 389.418px 86.2312px;" id="eln2at71kb74" class="animable"></path><path d="M383.18,84.71s2.9,6.13,4.66,6.61,6.75-.57,7.39-2.31-1.12-7.93-1.12-7.93Z" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 389.275px 86.2582px;" id="elljri7dtu69e" class="animable"></path><line x1="394.11" y1="81.08" x2="407.71" y2="76.97" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 400.91px 79.025px;" id="elymr1kjiti6r" class="animable"></line><path d="M383.18,84.71l-8.63,3.51s1.95,3.93,5.26,3.39" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 378.865px 88.1855px;" id="ellf8lxo42bhl" class="animable"></path><path d="M391,96.65s4.78-.57,5.81-4.89" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 393.905px 94.205px;" id="elvafmofnyuia" class="animable"></path><path d="M394.53,105.63s7.21-4.95,8.09-5.69,1.77-3.45,1.77-3.45-1,8.25-1.68,10-1.45,3.63-1.45,3.63Z" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 399.46px 103.305px;" id="elk9te5t8cki" class="animable"></path><path d="M410.59,87.35s-1.11,3.05-2.92,3.22" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 409.13px 88.96px;" id="elpdmthaqbmv" class="animable"></path><path d="M385.86,82a5.13,5.13,0,0,1,5.57-2.13" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 388.645px 80.8521px;" id="el3u2c9gmyn2j" class="animable"></path></g><g id="freepik--character-1--inject-32" class="animable animator-active" style="transform-origin: 251.495px 294.013px;"><path d="M301.79,225.41,304,219.6l4.6-4.35s1.6-2.91,2.57-2.32.4,1.22,0,2.37a15.58,15.58,0,0,1-2.66,3.33s9-6,9.5-6.13,2,.84,1.2,1.8-6.86,5-6.86,5l9.86-4.41s.79,2.61-.28,3.19-6.63,4.35-6.63,4.35,4.33-1.16,5.56-1.73,1.75,1.34.85,1.94-6.44,4-6.44,4,5.36-1.24,5.13-.58-.1,1.18-1.65,1.55-7.73,3.23-7.73,3.23l-8.51,2.49Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 312.14px 222.909px;" id="elemnarqyzu" class="animable"></path><polygon points="298.68 227.45 301.8 225.41 305.51 233.5 301.07 236.26 298.68 227.45" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 302.095px 230.835px;" id="elye9awj39pfh" class="animable"></polygon><path d="M182,301.59s.87,10.62.78,11.68,4.5,5.93,5.68,6.74,5.4-.43,5.4-.43,4.64-6.21,4.26-8a4.43,4.43,0,0,0-1.56-2.64l-5.73-5.37L189,301.3Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 190.071px 310.792px;" id="elycocrm5a0oh" class="animable"></path><path d="M190.08,313.72l-2.37,2.65s1.1,1.71,2.2,1.44l1.09-.26h0" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 189.355px 315.779px;" id="el87nw84v69o" class="animable"></path><path d="M189,301.3s6,5.33,7.19,5.79a2.67,2.67,0,0,1,1.56,2.64,53,53,0,0,1-6,5.38c-1.14.8-2.16.17-1.67-1.39s1.59-4,1.59-4-2.34.15-2.89-1.68" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 193.269px 308.379px;" id="els0k4g2ju3g" class="animable"></path><path d="M181.53,296.73l.48,4.86s2.54,1.65,4.34,1.45a12.48,12.48,0,0,0,4.07-1.62l1.46-3.35Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 186.705px 299.893px;" id="elw6ttwv0dk7g" class="animable"></path><path d="M282.2,369.79s-3.36,12.08-3.4,14.59a75.12,75.12,0,0,0,.76,7.95s1,1,3.53.66a12.68,12.68,0,0,0,5.15-1.53c.58-.49.51-3.9.51-3.9s2.48.39,4.24.72,7.53-2,9.77-3.11,6.43-3.93,7-6.21-1-3.31-1.69-3.37-9.49-.1-11.43-.45-5.25-3.67-5.38-4.22S282.2,369.79,282.2,369.79Z" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 294.341px 381.425px;" id="el3cpxatpnrr4" class="animable"></path><path d="M234.87,417.91l.42,5.59s4,5.19,5.24,5.83,3.88.69,4.1,2.32.69,2.39-.61,3-6.49,2.49-8.47,2.5-5.6-1.56-5.6-1.56l-.54,2.11a9,9,0,0,1-3.64.58,14.06,14.06,0,0,1-4.24-.72s-.86-4.55-.47-7,2-9,2-9l1.4-5.8Z" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 232.927px 427.025px;" id="ellidrmcspxwr" class="animable"></path><path d="M213.8,303.78l4.55,9.5L231,359.21l-7.62,57.59s2.85,2.21,5.16,2.41,8.05-.21,8.05-.21l13.43-60.84,2.25-45,35.08,1.4-7,56.69s4.37,1.09,6,1.22a58.29,58.29,0,0,0,7.4-.79s16.46-70.71,16.95-72.28a3.3,3.3,0,0,0-.1-3c-.45-.94-40.71-10.64-40.71-10.64S222.67,304.54,213.8,303.78Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 262.406px 352.512px;" id="elu6pcc3fj69g" class="animable"></path><polygon points="252.3 313.15 232.18 311.82 251.41 325.97 252.3 313.15" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 242.24px 318.895px;" id="el010xk6v4qyyoi" class="animable"></polygon><path d="M213.86,210.53s-12,7.16-12.79,9.61-17.29,42.6-17.43,44.27-3.14,34.15-3.14,34.15a20.58,20.58,0,0,0,5.14,1.28c2.5.21,6.24-1.77,6.24-1.77l7.32-34L212.33,248l3.83,14.18L207,305.45s15.36,4.46,31.49,0,34.45-19.93,34.45-19.93-9.41-17.6-12-21.18-4.83-7.34-4.83-7.34l.23-7.54s13.84,14.83,15.35,14.33,31.12-27.56,31.12-27.56l-4.08-8.75-26.95,13.23s-13.53-30.76-16.37-31.84-9.08-1.83-9.08-1.83S226.94,202.42,213.86,210.53Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 241.655px 256.581px;" id="el10wdatea28va" class="animable"></path><path d="M233.5,157.65a22.47,22.47,0,0,1,3.06,4.52c1.55,2.92,1.94,6.07,4.3,7.26s5.65,1,5.56,2.11-1.95,3.61-1.95,3.61,2.73,10.23,2.09,12-8.69,5.65-8.69,5.65l0,9.19-11.89.95a116,116,0,0,1-4.9-15.51c-1.4-6.68,5.16-10.54,5-18.42s1.21-12.2,2.88-12.55S233.5,157.65,233.5,157.65Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 233.771px 179.674px;" id="el7wmti8vggk2" class="animable"></path><path d="M238.61,169.65c.4,1,.35,2-.11,2.15s-1.16-.48-1.56-1.48-.35-2,.11-2.16S238.21,168.64,238.61,169.65Z" style="fill: rgb(38, 50, 56); transform-origin: 237.775px 169.979px;" id="el42haxxub1ok" class="animable"></path><path d="M235.3,167.31s-.16-2,1.77-1.49" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 236.183px 166.523px;" id="elbzl0qwd5ndq" class="animable"></path><path d="M245.42,179.33a2.88,2.88,0,0,1-3.17.71" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 243.835px 179.787px;" id="el9n3g64e7so" class="animable"></path><path d="M231.87,161.44s2.62,5.8,1.29,9.79a32,32,0,0,1-3.57,7.23s-2.63,3.88-2.19,6.38,3.08,11.9,3.86,12.46l.77.56,1.65,1.78s-8.66,5.33-18.1,6.49-15.65-1.18-16.89-1.94a21.34,21.34,0,0,1-2.32-1.68s4.81-8.28,4.9-17-2.57-14,0-21.64,22.14-11.55,22.14-11.55.9-2.88,4.65-2.56,7.5,8.19,7.5,8.19Z" style="fill: rgb(38, 50, 56); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 215.965px 178.091px;" id="el0906dicr93s" class="animable"></path><path d="M230.82,181.36s-2.92-4.19-4.52-.88,3.52,8.66,6.12,7.08" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 229.208px 183.526px;" id="el6a5i21irsmh" class="animable"></path><path d="M226.86,200.94s9.52-.86,11.18-.72,5.64,2.79,5.64,2.79l-.27,3.13s-9.23-2.47-14.36-1.44S216.59,208,216.59,208l1.47-4.92S223.07,201,226.86,200.94Z" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 230.135px 204.102px;" id="elqg5kwls98k" class="animable"></path><path d="M213.86,210.53l1.72-4.4s12.55-3.07,17.44-3.61a23.49,23.49,0,0,1,12.39,2.32,6.49,6.49,0,0,1,2.88,3.18s-9.88-2.31-18.58-1.17A86.51,86.51,0,0,0,213.86,210.53Z" style="fill: rgb(10, 191, 140); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 231.075px 206.481px;" id="el7plsba5ufgh" class="animable"></path><path d="M256.29,249.43,243.71,237s-2.82-3.81-1.23-10.18" style="fill: none; stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 249.142px 238.125px;" id="el4kdflojziqb" class="animable"></path><line x1="212.33" y1="247.97" x2="204.93" y2="229.08" style="fill: rgb(255, 255, 255); stroke: rgb(38, 50, 56); stroke-linecap: round; stroke-linejoin: round; transform-origin: 208.63px 238.525px;" id="el0oemhmprb3af" class="animable"></line></g><defs>     <filter id="active" height="200%">         <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#32DFEC" flood-opacity="1" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>    </filter>    <filter id="hover" height="200%">        <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#ff0000" flood-opacity="0.5" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>            <feColorMatrix type="matrix" values="0   0   0   0   0                0   1   0   0   0                0   0   0   0   0                0   0   0   1   0 "></feColorMatrix>    </filter></defs></svg>
-        </div>
+      <div class="image"></div>
     </section>
 
     <section class="topics">
-        <div>
-            <div class="image" style="background-image: url(./assets/images/main/pexels-andrea-piacquadio-3776776.jpg); border-radius: 26% 74% 40% 60% / 69% 39% 61% 31% ;"></div>
-            <div class="content">
-                <h2>Organize seus gastos do mês e alcance a estabilidade financeira</h2>
-                <p>Descubra as melhores estratégias e ferramentas para organizar seus gastos mensais de forma eficiente, evitando desperdícios e alcançando a estabilidade financeira que você tanto deseja. Aprenda a criar um orçamento sólido, controlar despesas e estabelecer metas realistas para suas finanças.</p>
-            </div>
+      <div>
+        <div
+          class="image"
+          style="
+            background-image: url(./assets/images/main/pexels-andrea-piacquadio-3776776.jpg);
+            border-radius: 26% 74% 40% 60% / 69% 39% 61% 31%;
+          "
+        ></div>
+        <div class="content">
+          <h2>
+            Organize seus gastos do mês e alcance a estabilidade financeira
+          </h2>
+          <p>
+            Descubra as melhores estratégias e ferramentas para organizar seus
+            gastos mensais de forma eficiente, evitando desperdícios e
+            alcançando a estabilidade financeira que você tanto deseja. Aprenda
+            a criar um orçamento sólido, controlar despesas e estabelecer metas
+            realistas para suas finanças.
+          </p>
         </div>
+      </div>
 
-        <div>
-            <div class="content">
-                <h2>Planeje seu futuro financeiro e conquiste a liberdade econômica</h2>
-                <p>Planejar o futuro financeiro é essencial para alcançar a liberdade econômica e a tranquilidade financeira. Neste guia, você encontrará dicas valiosas sobre como estabelecer metas financeiras de longo prazo, criar um plano de aposentadoria sólido e investir estrategicamente para garantir um futuro próspero.</p>
-            </div>
-            <div class="image" style="background-image: url(./assets/images/main/pexels-andrea-piacquadio-3823488.jpg); border-radius: 9% 91% 18% 82% / 83% 21% 79% 17% ;"></div>
+      <div>
+        <div class="content">
+          <h2>
+            Planeje seu futuro financeiro e conquiste a liberdade econômica
+          </h2>
+          <p>
+            Planejar o futuro financeiro é essencial para alcançar a liberdade
+            econômica e a tranquilidade financeira. Neste guia, você encontrará
+            dicas valiosas sobre como estabelecer metas financeiras de longo
+            prazo, criar um plano de aposentadoria sólido e investir
+            estrategicamente para garantir um futuro próspero.
+          </p>
         </div>
+        <div
+          class="image"
+          style="
+            background-image: url(./assets/images/main/pexels-andrea-piacquadio-3823488.jpg);
+            border-radius: 9% 91% 18% 82% / 83% 21% 79% 17%;
+          "
+        ></div>
+      </div>
 
-        <div>
-            <div class="image" style="background-image: url(./assets/images/main/pexels-burak-the-weekender-186461.jpg); border-radius: 31% 69% 14% 86% / 45% 37% 63% 55% ;"></div>
-            <div class="content">
-                <h2>Dicas para investir com sabedoria e maximizar seus ganhos</h2>
-                <p>Conheça as melhores dicas e estratégias para investir seu dinheiro com sabedoria e obter ganhos sólidos no mercado financeiro. Aprenda sobre diversificação de investimentos, análise de riscos, escolha de ativos e como aproveitar oportunidades de crescimento. Esteja preparado para tomar decisões informadas e conquistar resultados positivos em seus investimentos.</p>
-            </div>
+      <div>
+        <div
+          class="image"
+          style="
+            background-image: url(./assets/images/main/pexels-burak-the-weekender-186461.jpg);
+            border-radius: 31% 69% 14% 86% / 45% 37% 63% 55%;
+          "
+        ></div>
+        <div class="content">
+          <h2>Dicas para investir com sabedoria e maximizar seus ganhos</h2>
+          <p>
+            Conheça as melhores dicas e estratégias para investir seu dinheiro
+            com sabedoria e obter ganhos sólidos no mercado financeiro. Aprenda
+            sobre diversificação de investimentos, análise de riscos, escolha de
+            ativos e como aproveitar oportunidades de crescimento. Esteja
+            preparado para tomar decisões informadas e conquistar resultados
+            positivos em seus investimentos.
+          </p>
         </div>
-
+      </div>
     </section>
 
     <footer>
-        <div class="info">
-            <a class="logo" href=""><span>Fin</span> Control</a>
+      <div class="info">
+        <a class="logo" href=""><span>Fin</span> Control</a>
 
-            <div class="links">
-                <ul>
-                    <li><a href="">Design no Figma</a></li>
-                </ul>
-            </div>
+        <div class="links">
+          <ul>
+            <li><a href="">Design no Figma</a></li>
+          </ul>
         </div>
+      </div>
 
-        <div class="social">
-            <ul>
-                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #022a1f;transform: ;msFilter:;"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path></svg></a></li>
+      <div class="social">
+        <ul>
+          <li>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                style="fill: #022a1f; transform: ; msfilter: "
+              >
+                <path
+                  d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+                ></path></svg
+            ></a>
+          </li>
 
-                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #022a1f;transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg></a></li>
-                
-                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: #022a1f;transform: ;msFilter:;"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg></a></li>
-            </ul>
-            <h3>Desenvolvido por Yuri Fernandes!</h3>
-        </div>
+          <li>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                style="fill: #022a1f; transform: ; msfilter: "
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                ></path></svg
+            ></a>
+          </li>
+
+          <li>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                style="fill: #022a1f; transform: ; msfilter: "
+              >
+                <path
+                  d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+        <h3>Desenvolvido por Yuri Fernandes!</h3>
+      </div>
     </footer>
 
     <!-- scripts -->
+    <script src="./assets/js/main.js"></script>
 
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

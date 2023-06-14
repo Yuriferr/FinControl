@@ -47,21 +47,23 @@ main .artigos{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(211, 211, 211, 0.2);
-    padding: 20px 0;
+    background-color: #0ABF8C;
+    padding: 50px 0;
 }
 
 main .artigos div{
     width: 300px;
     height: 350px;
-    background-color: #0ABF8C;
-    border-radius: 10px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
     overflow: hidden;
-    gap: 10px;
+    border-radius: 20px;
+    background: #0ABF8C;
+    box-shadow:  20px 20px 60px #045f45,
+                -20px -20px 60px #17fdbc;
 }
 
 
@@ -82,4 +84,15 @@ main .artigos div p{
     width: 100%;
     text-align: justify;
     font-size: 0.9em;
+}
+
+@media screen and (max-width: 700px){
+    main .artigos{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    main .artigos div{
+        width: 80%;
+    }
 }

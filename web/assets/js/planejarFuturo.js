@@ -27,9 +27,9 @@ document.getElementById('metaForm').addEventListener('submit', function(e) {
         descricaoCell.innerHTML = descricao;
         valorCell.innerHTML = valor;
         dataCell.innerHTML = data;
-        actionsCell.innerHTML = '<button class="edit-button btn btn-success" onclick="editRow(this)">Editar</button>' +
-                                '<button class="delete-button btn btn-success" onclick="deleteRow(this)">Excluir</button>' +
-                                '<button class="notify-button btn btn-success" onclick="setNotification(this)">Notificar</button>';
+        actionsCell.innerHTML = '<button class="edit-button btn btn-success" onclick="editRow(this)"><span class="material-icons">edit</span></button>' +
+                                '<button class="delete-button btn btn-success" onclick="deleteRow(this)"><span class="material-icons">delete</span></button>' +
+                                '<button class="notify-button btn btn-success" onclick="setNotification(this)"><span class="material-icons">notifications</span></button>';
     }
 
     document.getElementById('metaForm').reset();

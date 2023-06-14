@@ -16,6 +16,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <title>Adicionar Servico</title>
   </head>
   <body>
@@ -38,6 +44,23 @@
           </a>
         </li>
       </ul>
+
+      <div class="open-menu-button">
+        <span class="material-icons">menu</span>
+      </div>
+
+      <div class="fullscreen-menu">
+        <div class="fullscreen-menu-content">
+          <!-- Conteúdo do seu menu -->
+          <div><a href="./planejarFuturo.html">Planejar Futuro</a></div>
+          <div>
+            <a href="./dicasInvestimentos.html">Dicas de Investimento</a>
+          </div>
+          <div><a href="./adcionarServico.html">Adcionar Serviço</a></div>
+          <div><a href="./user.html">Perfil</a></div>
+          <div class="close-menu-button">Fechar Menu</div>
+        </div>
+      </div>
     </header>
 
     <section>
@@ -46,16 +69,35 @@
       <form id="serviceForm">
         <div class="form-group">
           <label for="exampleInputEmail1">Nome do Serviço</label>
-          <input type="text" class="form-control" id="serviceName" aria-describedby="emailHelp" placeholder="Nome do Serviço" required>
+          <input
+            type="text"
+            class="form-control"
+            id="serviceName"
+            aria-describedby="emailHelp"
+            placeholder="Nome do Serviço"
+            required
+          />
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Valor a Pagar</label>
-          <input type="number" class="form-control" id="serviceValue" placeholder="Valor a Pagar" required>
+          <input
+            type="number"
+            class="form-control"
+            id="serviceValue"
+            placeholder="Valor a Pagar"
+            required
+          />
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Data de Pagamento</label>
-            <input type="date" class="form-control" id="paymentDate" placeholder="Data de Vencimento" required>
-          </div>
+          <label for="exampleInputPassword1">Data de Pagamento</label>
+          <input
+            type="date"
+            class="form-control"
+            id="paymentDate"
+            placeholder="Data de Vencimento"
+            required
+          />
+        </div>
 
         <button type="submit" class="btn btn-success">Adicionar Serviço</button>
       </form>
@@ -68,11 +110,11 @@
           <th scope="col">Ações</th>
         </tr>
       </table>
-
     </section>
 
     <!-- scripts -->
     <script src="../js/adicionarServico.js"></script>
+    <script src="../js/main.js"></script>
 
     <!-- bootstrap -->
     <script

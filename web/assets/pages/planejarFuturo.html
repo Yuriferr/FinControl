@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- css -->
     <link rel="stylesheet" href="../css/main.css" />
@@ -16,73 +16,122 @@
       crossorigin="anonymous"
     />
 
+    <!-- icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <title>Planejar seu Futuro</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="../../index.html"><span>Fin</span> Control</a>
-  
-        <ul>
-          <li>
-            <a href="./planejarFuturo.html">Planejar Futuro</a>
-          </li>
-          <li>
-            <a href="./dicasInvestimentos.html">Dicas Investimentos</a>
-          </li>
-          <li>
-            <a href="./adcionarServico.html">Adicionar Serviço</a>
-          </li>
-          <li>
-            <a href="./user.html">
-              <img src="../images/main/perfil.jpg" alt="foto de perfil" />
-            </a>
-          </li>
-        </ul>
+      <a href="../../index.html"><span>Fin</span> Control</a>
+
+      <ul>
+        <li>
+          <a href="./planejarFuturo.html">Planejar Futuro</a>
+        </li>
+        <li>
+          <a href="./dicasInvestimentos.html">Dicas Investimentos</a>
+        </li>
+        <li>
+          <a href="./adcionarServico.html">Adicionar Serviço</a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <img src="../images/main/perfil.jpg" alt="foto de perfil" />
+          </a>
+        </li>
+      </ul>
+
+      <div class="open-menu-button">
+        <span class="material-icons">menu</span>
+      </div>
+
+      <div class="fullscreen-menu">
+        <div class="fullscreen-menu-content">
+          <!-- Conteúdo do seu menu -->
+          <div><a href="./planejarFuturo.html">Planejar Futuro</a></div>
+          <div>
+            <a href="./dicasInvestimentos.html">Dicas de Investimento</a>
+          </div>
+          <div><a href="./adcionarServico.html">Adcionar Serviço</a></div>
+          <div><a href="./user.html">Perfil</a></div>
+          <div class="close-menu-button">Fechar Menu</div>
+        </div>
+      </div>
     </header>
 
     <section>
-        <h1>Tabela de Metas</h1>
+      <h1>Tabela de Metas</h1>
 
-        <form id="metaForm" class="form">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Meta</label>
-                <input type="text" class="form-control" id="meta" aria-describedby="emailHelp" placeholder="Nome da Meta" required>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Descrição</label>
-                <input type="text" class="form-control" id="descricao" placeholder="Descrição da Meta" required>
-              </div>
-              <div class="form-group">
-                  <label for="exampleInputPassword1">Valor</label>
-                  <input type="number" class="form-control" id="valor" placeholder="Valor para conseguir" required>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Data de conclusão</label>
-                    <input type="date" class="form-control" id="data" placeholder="Data de conclusão" required>
-                  </div>
-      
-              <button type="submit" class="btn btn-success">Adicionar Meta</button>
-        </form>
+      <form id="metaForm" class="form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Meta</label>
+          <input
+            type="text"
+            class="form-control"
+            id="meta"
+            aria-describedby="emailHelp"
+            placeholder="Nome da Meta"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Descrição</label>
+          <input
+            type="text"
+            class="form-control"
+            id="descricao"
+            placeholder="Descrição da Meta"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Valor</label>
+          <input
+            type="number"
+            class="form-control"
+            id="valor"
+            placeholder="Valor para conseguir"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Data de conclusão</label>
+          <input
+            type="date"
+            class="form-control"
+            id="data"
+            placeholder="Data de conclusão"
+            required
+          />
+        </div>
 
-        <table id="metaTable" class="table table-bordered">
-            <tr>
-                <th scope="col">Meta</th>
-                <th scope="col">Descrição</th>
-                <th scope="col">Valor</th>
-                <th scope="col">Data de Conclusão</th>
-                <th scope="col">Ações</th>
-            </tr>
-        </table>
+        <button type="submit" class="btn btn-success">Adicionar Meta</button>
+      </form>
+
+      <table id="metaTable" class="table table-bordered">
+        <tr>
+          <th scope="col">Meta</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Data de Conclusão</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </table>
     </section>
 
-        <!-- scripts -->
-        <script src="../js/planejarFuturo.js"></script>
+    <!-- scripts -->
+    <script src="../js/planejarFuturo.js"></script>
+    <script src="../js/main.js"></script>
 
-        <!-- bootstrap -->
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-          crossorigin="anonymous"
-        ></script>
-</body>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
