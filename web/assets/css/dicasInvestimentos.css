@@ -1,7 +1,7 @@
 main {
     width: 100%;
     height: 100%;
-    padding: 100px 0;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,6 +86,79 @@ main .artigos div p{
     font-size: 0.9em;
 }
 
+/* especialistas */
+
+.especialistas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #119e76;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.especialistas h1{
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.especialistas p{
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 50px;
+}
+
+.especialistas .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.especialistas .content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.especialistas .content div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.especialistas .content div p{
+    margin: 0;
+}
+
+/* tendencias */
+
+.tendencias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+}
+
+.tendencias h1{
+    color: #0ABF8C;
+    text-align: center;
+    font-size: 2em;
+}
+
+.tendencias p{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
 @media screen and (max-width: 700px){
     main .artigos{
         flex-direction: column;
@@ -94,5 +167,19 @@ main .artigos div p{
 
     main .artigos div{
         width: 80%;
+    }
+
+    /* especialistas */
+
+    .especialistas p{
+        margin: 0 30px 30px 30px;
+    }
+
+    .tendencias p{
+        font-size: 0.8em;
+    }
+    
+    .tendencias ol li{
+        font-size: 0.8em;
     }
 }
