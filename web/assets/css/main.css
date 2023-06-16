@@ -124,6 +124,7 @@ header ul li a img{
 }
 
 .banner .content h1{
+    font-weight: 700;
     font-size: 3em;
 }
 
@@ -296,6 +297,7 @@ footer .social h3{
     .banner .content{
         width: 100%;
         align-items: center;
+        padding: 0 30px;
     }
 
     .banner .content h1{
@@ -306,6 +308,7 @@ footer .social h3{
     .banner .content p{
         text-align: center;
         font-size: 0.8em;
+        width: 100%;
     }
 
     .banner .image{
