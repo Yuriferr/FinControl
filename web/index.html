@@ -7,12 +7,8 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
 
     <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,50 +52,33 @@
     <title>FIN CONTROL</title>
   </head>
   <body>
-    <header>
-      <a href=""><span>Fin</span> Control</a>
-
-      <ul>
-        <li>
-          <a href="./assets/pages/planejarFuturo.html">Planejar Futuro</a>
-        </li>
-        <li>
-          <a href="./assets/pages/dicasInvestimentos.html"
-            >Dicas Investimentos</a
-          >
-        </li>
-        <li>
-          <a href="./assets/pages/adcionarServico.html">Adicionar Serviço</a>
-        </li>
-        <li>
-          <a href="./assets/pages/user.html">
-            <img src="./assets/images/main/perfil.jpg" alt="foto de perfil" />
-          </a>
-        </li>
-      </ul>
-
-      <div class="open-menu-button">
-        <span class="material-icons">menu</span>
-      </div>
-
-      <div class="fullscreen-menu">
-        <div class="fullscreen-menu-content">
-          <!-- Conteúdo do seu menu -->
-          <div>
-            <a href="./assets/pages/planejarFuturo.html">Planejar Futuro</a>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">FinControl</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./assets/pages/dicasInvestimentos.html">Dicas de Investimentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./assets/pages/adcionarServico.html">Adicionar Serviço</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./assets/pages/planejarFuturo.html">Planejar Futuro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./assets/pages/user.html"></a>
+              </li>
           </div>
-          <div>
-            <a href="./assets/pages/dicasInvestimentos.html"
-              >Dicas de Investimento</a
-            >
-          </div>
-          <div>
-            <a href="./assets/pages/adcionarServico.html">Adcionar Serviço</a>
-          </div>
-          <div><a href="./assets/pages/user.html">Perfil</a></div>
-          <div class="close-menu-button">Fechar Menu</div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <section class="banner">
